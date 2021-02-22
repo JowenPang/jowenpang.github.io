@@ -1,5 +1,6 @@
 #logo{
     display: block;
+    align-content: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
@@ -11,6 +12,7 @@
 }
 .header-size{
     padding-top: 50px;
+    width: 100%;
 }
 
 
@@ -38,7 +40,7 @@ a:hover{
 }
 
 .carousel-item {
-    height: 500px;
+    height: 500px ;
     background: rgb(255,255,255);
     color: black;
     position: relative;
@@ -46,7 +48,7 @@ a:hover{
 
 .carousel-item img {
     opacity: 50%;
-    height: 500px;
+    height: 500px ;
     position: absolute;
     display: block;
     object-position: 50% 50%;
@@ -82,8 +84,66 @@ a:hover{
     text-align: center;
 }
 
+@media(max-width: 480px){
+    .grid-container{
+        display: grid;
+        grid-template-areas: "main"
+                             "main"
+                             "right";
+
+        text-align: center;
+    }
+
+    .carousel-item {
+        height: 70vw;
+    }
+
+    .carousel-item img {
+        height: 70vw;
+    }
+    .carousel-text{
+        font-size: 24px;
+        padding-bottom: 35px;
+    }
+
+    .main-grid{
+        align-content: center;
+        width:100%;
+    }
+    .right-grid{
+        width: 100%;
+    }
+
+    .title-text{
+        font-size: 28px;
+        color:#725b53;
+    }
+    .paragraph-text{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .video-size{
+        width:40%;
+    }
+
+}
+
 .main-grid{
     grid-area:main;
+}
+
+.title-text{
+    font-size: 28px;
+    color:#725b53;
+}
+.paragraph-text{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .right-grid{
@@ -101,6 +161,11 @@ a:hover{
     border-radius : 20px;
     border-width:5px;
     border-color: white;
+}
+
+.video-size{
+    width: 560px;
+    height:315px;
 }
 #profile-image{
     width: 150px;
