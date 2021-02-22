@@ -3,38 +3,86 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="This webpage displays all my embroidery work">
+        <!-- responsive viewport meta tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Google Font API-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Shippori+Mincho+B1&display=swap" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <!--Bootstrap CSS Library-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Ms.lefty</title>
     </head>
     <body class="header-background" >
-    <header>
-        <img id="logo" width="200" height="200" src="img/logo.jpg" alt="logo"/>
+    <
+    <header class="header-size">
+        <img id="logo" width="180" height="180" src="img/logo.jpg" alt="logo"/>
         <!-- Description -->
         <section class="header-text">
             <p><b><big>Ms.Lefty Embroidery</big></b> is an embroidery website owned by Jowen Pang.
         <p>Here , I showcase all my previous embroidery pieces.</p>
         <p>Do follow me along the journey if you are interested to embroidery.</p>
         <p style="text-align:center;">have a look on my INSTAGRAM page,
-            <a href="https://www.instagram.com/ms.lefty_/" target="_blank"><big><b>Click here!</b></big></a>
+            <a href="https://www.instagram.com/ms.lefty_/" target="_blank"><b>Click here!</b></a>
         </p>
             <hr  style="height:1px;background-color:white;"/>
         </section>
+
+
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel1.jpg" class="d-block w-100" alt="First">
+                    <h1 class="carousel-text">Do what you love,</h1>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel2.jpg" class="d-block w-100" alt="Second">
+                    <h1 class="carousel-text">Love what you do.</h1>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel5.jpg" class="d-block w-100" alt="Third">
+                    <h1 class="carousel-text">"The only way to do great work</h1>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel6.jpg" class="d-block w-100" alt="Forth">
+                    <h1 class="carousel-text">is to love what you do"  -Steve Jobs</h1>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
+
+
+    <br/>
+    <hr  style="height:1px;background-color:white;"/>
     <main class="grid-background">
         <div class="grid-container">
             <!-- Main Content -->
             <div class="main-grid">
+                <br/>
                 <h2 style="color:#725b53;"><b>1. Breakfast Series</b></h2>
-                <img class="img" src="img/breakfast.jpg" alt="error"/>
-                <p>In this series , i created avocado, bread , bacon and egg , basically all the essential for a breakfast. I missed out <i><big>coffee</big></i>!</p>
+                <img class="img" src="img/bfast.jpg" alt="error"/>
+                <p>In this series , i created avocado, bread , bacon and egg , basically all the essential for a breakfast. I missed out coffee!</p>
                 <p>Year created : 2020</p>
                 <br/>
                 <h2 style="color:#725b53;"><b>2. Floral bicycle</b></h2>
                 <img class="img" align="CENTER" src="img/bicycle.jpg" alt="error"/>
-                <p>A present made for mum on her birthday , Tried out different ways to embroider <b><big>flowers</big></b>.</p>
+                <p>A present made for mum on her birthday , Tried out different ways to embroider flowers.</p>
                 <p>Year created : 2019</p>
                 <h2 style="color:#725b53;"><b>3. Wording embroidery</b></h2>
                 <img class="img" src="img/home.jpeg" alt="error"/>
@@ -61,6 +109,7 @@
             </div>
             <!-- Biography -->
             <div class="right-grid">
+                <br/>
                 <h3><b></b>Biography</h3>
                 <img id="profile-image" src="img/bio.jpeg" alt="Profile pic"/>
                 <h3>Jowen Pang</h3>
@@ -71,7 +120,7 @@
                     <li>Love sports</li>
                 </ul>
             </div>
-
+            <br/>
         </div>
     </main>
     <br/>
@@ -86,5 +135,8 @@
             <br/>
             </p>
     </footer>
+    <!--Bootstrap JS Library-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     </body>
 </html>
